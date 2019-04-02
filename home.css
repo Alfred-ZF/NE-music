@@ -1,30 +1,30 @@
-section.topBar{
+section.topBar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: #D43C32;
-  padding: 20px 10px;
+  padding: 5.3125vw 3.125vw;
   height: 64px;
 }
 
-section.topBar .logo>svg{
-  width: 142px;
-  height: 25px;
+section.topBar .logo>svg {
+  width: 37.866vw;
+  height: 3.74vh;
   vertical-align: top;
   fill: white;
   background: #D43C32;
 }
 
-section.topBar > a{
+section.topBar>a {
   color: white;
   display: inline-block;
-  font-size: 15px;
-  padding: 6px 10px;
-  line-height: 18px;
+  font-size: 2.2488756vh;
+  padding: 1.124vh 2.666vw;
+  line-height: 2.248vh;
   position: relative;
 }
 
-section.topBar > a::after{
+section.topBar>a::after {
   content: '';
   position: absolute;
   top: 0;
@@ -32,24 +32,102 @@ section.topBar > a::after{
   width: 200%;
   height: 200%;
   border: 1px solid white;
-  border-radius: 35px;
+  border-radius: 15.625vw;
   transform: scale(0.5);
   transform-origin: 0 0;
 }
 
-section.globalTabs{
+.tabs {
+  display: flex;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+}
+
+.tabs li {
+  flex: 1;
+  text-align: center;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.tabs li .text {
+  padding: 10px 5px;
+  font-size: 4vw;
+  position: relative;
+
+
+}
+
+.tabs>li.active {
+  color: #D43C32;
+}
+
+.tabs>li.active .text {}
+
+.tabs>li.active .text::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  background: #D43C32;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.tab-content>li {
+  display: none;
+}
+
+.tab-content>li.active {
+  display: block;
 
 }
 
 section.playlists{
+  padding: 20px 0 0 0;
+}
+
+section.playlists h2{
+  font-size: 17px;
+  padding-left: 9px;
+  border-left: 3px solid #D43C32;
+  line-height: 17px;
+  height: 17px;
+  margin: 0 0 10px 0;
+  font-family: Helvetica, sans-serif;
 
 }
 
-section.songs{
-
+section.playlists .songs{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-section.art{
-
+section.playlists .songs li{
+  width: 32.6%;
+  margin: 8px 0;
 }
 
+section.playlists .songs li p{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  
+  padding: 3px 2px 0 6px;
+  font-size: 13px;
+  line-height: 18px;
+  height: 40px;
+  
+}
+
+section.playlists .songs li img{
+  width: 100%;
+}
+
+section.songs {}
+
+section.art {}
